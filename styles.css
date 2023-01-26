@@ -102,5 +102,5 @@ body{
     right: 50%;
     transform-origin: 50% calc(100% - 25px);
     transform: rotateZ(270deg);
-    transition: transform 200ms ease;
+    transition: transform 200ms ease linear;
 }

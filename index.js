@@ -11,7 +11,11 @@ setInterval(() => {
   let min = time.getMinutes();
   let sec = time.getSeconds();
 
-  hour.style.transform = `rotateZ(${(hr * 360) / 12}deg)`;
+  // let hr = 12;
+  // let min = 59;
+  // let sec = 20;
+
+  hour.style.transform = `rotateZ(${hr * 30 + min / 2}deg)`;
   minute.style.transform = `rotateZ(${(min * 360) / 60}deg)`;
   second.style.transform = `rotateZ(${(sec * 360) / 60}deg)`;
 });
