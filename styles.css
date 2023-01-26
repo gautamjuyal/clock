@@ -14,12 +14,18 @@ body{
 }
 
 .clock{
-    border: 3px dashed white;
+    border: 5px solid #091921;
     width: 350px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     position: relative;
-    
+    background-image: url('./clock.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.1),
+                inset 0 -15px 15px rgba(0,0,0,0.1);
 }
 
 .hands{
@@ -35,7 +41,7 @@ body{
     color: white;
     font-size: 20px;
     text-transform: uppercase;
-    bottom: 10%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -43,7 +49,7 @@ body{
 }
 
 .month, .day{
-    background: black;
+    background: #050f14;
     padding: 5px 8px;
     border-radius: 3px;
 }
